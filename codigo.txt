@@ -1,1 +1,9 @@
-
+> datosincendios <- read.table("C:/Desktop/incendios.dat", header=T)
+> datoscocdatosincendios
+> summary(datosincendios)
+> t.test(datosincendios$Negligencia,datosincendios$Intencionado) # Prueba t de Student
+> x<-mean(datosincendios$Negligencia)
+> y<-mean(datosincendios$Intencionado)
+>  boxplot(datosincendios$Negligencia,datosincendios$Intencionado,names=c("X1","X2"))
+> medias <- c(x,y)
+> points(medias,pch=20,col="red")
